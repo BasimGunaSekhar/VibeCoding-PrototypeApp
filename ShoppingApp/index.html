@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vibe Coding - Shopping Prototype</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <nav id="leftNav" class="nav">
+      <div class="logo">Vibe</div>
+      <ul>
+        <li><a href="#/products" data-route="products" title="Products"><span class="icon">🍏</span><span class="label">Products</span></a></li>
+        <li><a href="#/cart" data-route="cart" title="Shopping Cart"><span class="icon">🛒<span id="navCount" class="badge">0</span></span><span class="label">Cart</span></a></li>
+        <li><a href="#/checkout" data-route="checkout" title="Checkout"><span class="icon">💳</span><span class="label">Checkout</span></a></li>
+      </ul>
+    </nav>
+
+    <main id="main" class="main" role="main">
+      <!-- content injected by app.js -->
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+  <div id="toastRoot" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>

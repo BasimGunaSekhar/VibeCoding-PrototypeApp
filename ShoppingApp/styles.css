@@ -1,0 +1,77 @@
+:root{
+  --nav-width:220px;
+  --nav-collapsed:40px;
+  --bg:#f6f7fb;
+  --card:#ffffff;
+  --accent:#2b8aef;
+  --muted:#6b7280;
+  --radius:8px;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter, system-ui, Arial, sans-serif;background:var(--bg);color:#111}
+.app{min-height:100vh}
+
+/* Keep nav fixed to left for all screen sizes; main content will offset using margin-left */
+.nav{position:fixed;left:0;top:0;bottom:0;width:var(--nav-width);background:#fff;border-right:1px solid #e6e9ef;padding:16px;transition:width .2s ease, left .2s ease;z-index:20;overflow:auto}
+.nav .logo{font-weight:700;margin-bottom:12px}
+.nav ul{list-style:none;padding:0;margin:0}
+.nav li{margin:8px 0}
+.nav a{display:flex;align-items:center;gap:8px;text-decoration:none;color:inherit;padding:8px;border-radius:6px}
+.nav a:hover{background:#f0f4fb}
+.icon{font-size:20px;display:inline-block}
+.label{font-size:14px}
+.badge{background:var(--accent);color:#fff;padding:2px 6px;border-radius:999px;font-size:12px;margin-left:6px}
+
+.main{padding:20px;margin-left:var(--nav-width);transition:margin-left .2s ease}
+.page-title{font-size:20px;margin:0 0 12px}
+
+.grid{display:grid;gap:12px}
+.card{background:var(--card);padding:12px;border-radius:var(--radius);box-shadow:0 1px 2px rgba(16,24,40,.04);display:flex;align-items:center;gap:12px}
+.card .emoji{font-size:36px}
+.card .meta{flex:1}
+.price{color:var(--accent);font-weight:600}
+.qty{display:flex;align-items:center;gap:6px}
+.btn{background:var(--accent);color:#fff;padding:8px 10px;border:none;border-radius:6px;cursor:pointer}
+.btn.secondary{background:#eee;color:#111}
+
+.row{display:flex;gap:12px;align-items:center}
+
+/* Cart list */
+.cart-item{display:flex;align-items:center;gap:12px;padding:8px 0;border-bottom:1px solid #eef2f7}
+.cart-summary{background:var(--card);padding:12px;border-radius:8px}
+
+/* Responsive grid */
+@media(min-width:900px){.grid{grid-template-columns:repeat(4,1fr)}}
+@media(min-width:600px) and (max-width:899px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:599px){.grid{grid-template-columns:1fr}}
+
+/* Collapsed nav under 600px */
+@media(max-width:600px){
+  .nav{width:var(--nav-collapsed);padding:6px}
+  .label{display:none}
+  /* Keep a small badge visible over the icon in collapsed mode */
+  .badge{position:absolute;top:6px;right:6px;display:inline-block;padding:2px 6px;font-size:11px}
+  .nav a{justify-content:center}
+  .main{margin-left:var(--nav-collapsed)}
+  /* center emoji/icon horizontally when collapsed */
+  .nav a .icon{display:block;margin:0 auto}
+}
+
+/* Toasts */
+#toastRoot{position:fixed;right:16px;bottom:16px;z-index:60}
+.toast{background:rgba(17,24,39,0.95);color:#fff;padding:10px 14px;border-radius:8px;margin-top:8px;box-shadow:0 6px 18px rgba(11,15,29,0.2);min-width:200px}
+.toast.success{background:linear-gradient(90deg,#2b8aef,#2bb59a)}
+.toast .title{font-weight:600;margin-bottom:4px}
+.toast .msg{font-size:13px}
+.toast .close{background:none;border:none;color:inherit;position:absolute;top:6px;right:8px;cursor:pointer}
+
+/* When viewport is very narrow, ensure main keeps readable padding */
+@media(max-width:400px){
+  .main{padding:12px}
+}
+
+/* simple form */
+label{display:block;font-size:13px;margin:8px 0 4px}
+input[type=text],textarea,select{width:100%;padding:8px;border:1px solid #e6e9ef;border-radius:6px}
+
+.small{font-size:13px;color:var(--muted)}

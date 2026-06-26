@@ -1,0 +1,23 @@
+Products Page Wireframe (`#/products`)
+
+Top:
+- Page title: "Products"
+- Optional controls: Search input | Sort dropdown
+
+Main content:
+- Responsive product grid:
+  - Desktop: 2–4 columns
+  - Tablet: 2 columns
+  - Phone: 1 column
+
+Product Card layout:
+- Large emoji (image placeholder)
+- Product name
+- Price per unit (e.g., "$0.99 / each")
+- Quantity selector (minus / number / plus)
+- Add to Cart button
+
+Interactions:
+- Quantity changes affect only the card until "Add to Cart" clicked
+- Add to Cart updates nav cart count badge
+- Clicking product name or emoji navigates to ProductDetails

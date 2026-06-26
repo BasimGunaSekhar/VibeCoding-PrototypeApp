@@ -1,0 +1,24 @@
+ShoppingCart Page Wireframe (`#/cart`)
+
+Header:
+- Page title: "Shopping Cart"
+
+Main content:
+- Cart items list (vertical): for each item:
+  - Emoji
+  - Product name (link to details)
+  - Unit price
+  - Quantity input (editable with +/-)
+  - Item total (price * qty)
+  - Remove (trash icon)
+
+Summary section (bottom or right side):
+- Subtotal
+- Taxes (optional demo)
+- Total
+- Proceed to Checkout button
+
+Interactions:
+- Changing quantity updates item total and subtotal immediately
+- Remove deletes the item and updates subtotal and nav count
+- Cart persisted to `localStorage`; restored on page load

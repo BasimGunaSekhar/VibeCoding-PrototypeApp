@@ -1,0 +1,22 @@
+ProductDetails Page Wireframe (`#/products/:id`)
+
+Header:
+- Back link/button: "← Back to Products"
+- Page title: Product name
+
+Main section:
+- Left/Top: Large emoji image (hero)
+- Right/Below: Product info
+  - Name
+  - Price per unit
+  - Unit (each, lb, pint, etc.)
+  - Description (paragraph)
+
+Actions:
+- Quantity selector (minus / number / plus)
+- Add to Cart button
+- Small note: stock remaining
+
+Behavior:
+- Adding to cart shows small confirmation/toast and updates nav count
+- Back link returns to `#/products`

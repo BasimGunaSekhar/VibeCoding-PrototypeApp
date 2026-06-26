@@ -1,0 +1,25 @@
+Expanded Left Navigation (desktop)
+
+Layout:
+- Left column (220px):
+  - Logo
+  - Products
+  - Cart (🛒 0) — shows item count badge
+  - Checkout
+
+Behavior:
+- Persistent on all pages
+- Shows full labels and icons when viewport >= 300px
+- When viewport < 300px, nav collapses to slim bar showing 1-2 letter abbreviations with tooltips
+
+Collapsed Left Navigation (<300px)
+
+Layout:
+- Slim vertical bar (40px):
+  - "Pr" (Products)
+  - "Ct" (Cart) with small badge
+  - "Ch" (Checkout)
+
+Behavior:
+- Tooltips on hover/tap show full labels
+- Accessible focus states for keyboard navigation

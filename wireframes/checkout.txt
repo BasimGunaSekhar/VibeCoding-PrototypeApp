@@ -1,0 +1,21 @@
+Checkout Page Wireframe (`#/checkout`)
+
+Layout:
+- Left: Customer form (demo only)
+  - Name (text)
+  - Email (text)
+  - Address (textarea)
+
+- Right: Order summary
+  - List of items: emoji, name, qty, line total
+  - Subtotal and Total
+  - Process Order button
+
+Confirmation:
+- After clicking Process Order, show a confirmation view/message:
+  - "Thank you — your order has been processed (demo)."
+  - Summary reference number (demo only) and link back to `#/products`
+
+Notes:
+- Form does not submit to any backend (client-only demo)
+- Accessible form labels and focus order required

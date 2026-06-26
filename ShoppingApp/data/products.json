@@ -1,0 +1,12 @@
+[
+  {"id":"f1","name":"Apple","description":"Crisp red apple","price":0.99,"unit":"each","image":"🍎","stock":50},
+  {"id":"f2","name":"Banana","description":"Ripe yellow banana","price":0.25,"unit":"each","image":"🍌","stock":100},
+  {"id":"f3","name":"Orange","description":"Juicy navel orange","price":0.75,"unit":"each","image":"🍊","stock":80},
+  {"id":"f4","name":"Strawberry","description":"Sweet strawberries","price":3.99,"unit":"pint","image":"🍓","stock":30},
+  {"id":"f5","name":"Grapes","description":"Seedless grapes","price":2.49,"unit":"lb","image":"🍇","stock":40},
+  {"id":"f6","name":"Pineapple","description":"Tropical pineapple","price":2.99,"unit":"each","image":"🍍","stock":20},
+  {"id":"f7","name":"Watermelon","description":"Refreshing watermelon","price":4.99,"unit":"each","image":"🍉","stock":10},
+  {"id":"f8","name":"Pear","description":"Juicy green pear","price":1.29,"unit":"each","image":"🍐","stock":45},
+  {"id":"f9","name":"Peach","description":"Soft ripe peach","price":1.49,"unit":"each","image":"🍑","stock":35},
+  {"id":"f10","name":"Kiwi","description":"Tangy kiwi fruit","price":0.89,"unit":"each","image":"🥝","stock":60}
+]
